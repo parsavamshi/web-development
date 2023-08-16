@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and after pseudo selector</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color: black;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+          
+
+        }
+        header::before{
+            content: "";
+            background: url("https://source.unsplash.com/collection/190727/1600x900") no-repeat center center/cover;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            opacity: 0.3;
+        }
+        .navigation{
+            display: flex;
+            font-size: 20px;
+            font-family: 'Bree Serif', serif;
+
+
+        }
+        li{
+            list-style: none;
+            padding: 20px 23px;
+        }
+        section{
+            padding: 3px 23px;
+            display: flex;
+            margin: 3px 230px;
+            flex-direction: column;
+            align-items: center;
+            /* border: 2px solid red; */
+            font-family: 'Bree Serif', serif;
+            height: 344px;
+            justify-content: center;
+        }
+        h1{
+            font-size: 4rem;
+        }
+        p{
+            text-align: center;
+        }
+        /* section::after{
+            content: "this is a content";
+        }
+         */
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contant Us</li>
+            </ul>
+        </nav>
+       
+    </header>
+    <section>
+        <h1>Welcome to coding world</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum ipsum et optio accusantium libero quia voluptatibus provident odio repudiandae magni dolorem cum suscipit laboriosam, minima qui culpa quod esse ipsa tenetur. Maiores, veniam quo? </p>
+    </section>
+</body>
+</html>
