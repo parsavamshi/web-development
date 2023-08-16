@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Element selector */
+        p{
+            border: 1px solid red;
+        }
+        /* ID selector */
+        #firstpara{
+            color: green;
+        }
+        /* Class selector */
+        .bgBlue{
+            background-color: blue;
+            color: yellow;
+        }
+        /* grouping selector */
+        footer, span{
+            background-color: pink;
+        }
+
+    </style>
+</head>
+<body>
+    <h3>css selectors</h3>
+    <!-- CSS selectors are used to find the element whose property will set -->
+    <!-- Selectors are used to target the html elements -->
+    <!-- Selectors makes it easy for us to easily target single/multiple HTML elements in the markup  -->
+
+    <p id="firstpara">This is a simple paragraph to demonstrate css selectors</p>
+    <p id="secondPara" class="redElement bgBlue">This is a another simple paragraph to demonstrate css selectors</p>
+    <div>
+        <p>This is yet another simple paragraph inside div to demonstrate css selectors</p>
+    </div>
+    <span>this is span</span> 
+<footer>
+  
+    this  is footer
+</footer>
+</body>
+</html>
