@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            /* grid-column-gap: 2rem;
+            grid-row-gap: 1rem; */
+            grid-gap: 1rem;
+        }
+        .box{
+            border: 2px solid pink;
+            padding: 23px;
+            background-color: rgb(248, 189, 248);
+        }
+        .box:first-child{
+            /* grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3; */
+            grid-column: 1 / span 3;
+            grid-row: 1 / span 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Itsm-1</div>
+        <div class="box">Itsm-2</div>
+        <div class="box">Itsm-3</div>
+        <div class="box">Itsm-4</div>
+        <div class="box">Itsm-5</div>
+        <div class="box">Itsm-6</div>
+        <div class="box">Itsm-7</div>
+        <div class="box">Itsm-8</div>
+        <div class="box">Itsm-9</div>
+        <div class="box">Itsm-10</div>
+        <div class="box">Itsm-11</div>
+        <div class="box">Itsm-12</div>
+    </div>
+</body>
+</html>
