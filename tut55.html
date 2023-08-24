@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+</head>
+<body>
+    <div class="container">
+        This is about loops
+    </div>
+    <script>
+        console.log("This is tutorial 55")
+        // let i = 0
+        // for(i=0; i<3; i++){
+        //     console.log(i)
+        // }
+
+        let   friends = ['sai', 'sameer', 'ranjith', 'raju', 'dinesh', 'akshay', 'tharun']
+
+        for (let index = 0; index < friends.length; index++) {
+            console.log("hello friend " + friends[index])
+            
+        }
+
+        // for(let i =0; i<friends.length; i++){
+        //     console.log(friends[i])
+        // }
+
+        // friends.forEach(element => {
+        //     console.log("heelo " + element)
+        // });
+
+        // for (iterator of friends) {
+        //     console.log(iterator+ "hel;lo ")
+        // }
+
+            let emp={
+                name:"kittu",
+                salary:10,
+                channe:'CWK'
+            }
+            
+            // Use this loop to iterate over objects in javascript
+            for (const key in emp) {
+           console.log(`The ${key} of employe is ${emp[key]}`)
+        }
+
+        // for (const key in emp) {
+        //     if (Object.hasOwnProperty.call(emp, key)) {
+        //             console.log( emp[key]);
+                
+        //     }
+        // }
+
+
+        // while loop in js
+        let i =0
+        while(i<4){
+            console.log(`${i} is less then 4 `)
+            i++
+        }
+
+        // function e(a,b){
+        //   sum = a +b
+        //   sum = a -b
+        //   sum = a *b
+        //   sum = a /b
+        // }
+        // let x = 1
+        // let y = 4
+        // // e(x,y)
+        // while(e(x,y)<4){
+        //     console.log(`sum of a and b is ${x+y}`)
+        //     e(x,y)++
+        // }
+
+        // function e(a,b){
+        //     return [a+b, a-b, a*b, a/b]
+
+        // }
+        // let x = 1;
+        // let y = 4;
+
+        // let operations = e(x,y)
+
+        // while(operations[0] < 4 || operations[1] < 4 || operations[2] < 4 || operations[3] < 4){
+        //     console.log(`sum of a and b is ${x + y}` )
+        //     x++
+        //     operations= e(x,y)
+        // }
+
+
+        // do while loop in js
+        let j = 34
+        do{
+            console.log(`${j}  is less then  4 and we are inside do while loop`)
+            j++
+        }
+        while(j<4)
+
+</script>
+</body>
+</html>
