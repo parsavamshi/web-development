@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>javascript Dates</title>
+    <style>
+      .container {
+        font-size: 23px;
+        background-color: blanchedalmond;
+        border: 2px solid grey;
+        padding: 34px;
+        margin: 4px;
+        text-align: center;
+      }
+      #time {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">current time is <span id="time"></span></div>
+    <div class=""></div>
+    <script>
+      console.log("This is date and time tutorial");
+      let now = new Date();
+      console.log(now);
+
+      let dt = new Date(0);
+      console.log(dt);
+
+      // let newDate = new Date("2029-09-30")
+      // console.log(newDate)
+
+      // let newDate = new Date(year, month, date, hours, minutes, seconds, milliseconds)
+      let newDate = new Date(3020, 4, 6, 9, 3, 2, 34);
+      console.log(newDate);
+
+      let y = newDate.getFullYear();
+      console.log("The year is " + y);
+
+      let d = newDate.getDate();
+      console.log("The date is " + d);
+
+      let month = newDate.getMonth();
+      console.log("The Month is " + month);
+
+      let hours = newDate.getHours();
+      console.log("The hours is " + hours);
+
+      let day = newDate.getDay();
+      console.log("The hours is " + day);
+
+      let minutes = newDate.getMinutes();
+      console.log("The hours is " + minutes);
+
+      let seconds = newDate.getSeconds();
+      console.log("The hours is " + seconds);
+
+      newDate.setDate(5);
+      newDate.setSeconds(5);
+
+      // trying all set methods
+      console.log("Trying All Set Methods");
+      newDate.setDate(04);
+      newDate.setFullYear(1998);
+      newDate.setHours(7);
+      newDate.setMilliseconds(192);
+      newDate.setMinutes(10);
+      newDate.setMonth(9);
+      newDate.setSeconds(35);
+      // newDate.setTime(1332403882588);
+
+      console.log(newDate);
+
+      // trying all set methods in UTC
+      console.log("Trying All SetUTC Methods");
+      let utc = new Date();
+      utc.setUTCDate(12);
+      utc.setUTCFullYear(1998);
+      utc.setUTCHours(14);
+      utc.setUTCMilliseconds(200);
+      utc.setUTCMinutes(3);
+      utc.setUTCMonth(3);
+      utc.setUTCSeconds(3);
+      console.log(utc.toISOString());
+
+      console.log("Trying All Get Methods");
+      let getdate = new Date();
+      console.log(getdate.getDate());
+      console.log(getdate.getDay());
+      console.log(getdate.getFullYear());
+      console.log(getdate.getHours());
+      console.log(getdate.getMilliseconds());
+      console.log(getdate.getMinutes());
+      console.log(getdate.getMonth());
+      console.log(getdate.getSeconds());
+      console.log(getdate.getTime());
+      console.log(getdate.getTimezoneOffset());
+      console.log(getdate.getUTCDate());
+      console.log(getdate.getUTCDay());
+      console.log(getdate.getUTCFullYear());
+      console.log(getdate.getUTCHours());
+      console.log(getdate.getUTCMilliseconds());
+      console.log(getdate.getUTCMinutes());
+      console.log(getdate.getUTCMonth());
+      console.log(getdate.getUTCSeconds());
+
+      // let updateTime = document.getElementById('time').innerHTML = new Date()
+      setInterval(updateTime, 1000);
+      function updateTime() {
+        time.innerHTML = new Date();
+      }
+    </script>
+  </body>
+</html>
+  
