@@ -14,7 +14,7 @@ body::before{
     background: url("/static/gym.jpg") no-repeat center center ;
 }
 nav{
-    background-color: gray;
+    background-color: black;
     padding: 12px ;
 }
 ul{
@@ -54,7 +54,7 @@ input, textarea{
     margin: 4px auto;
     display: block;
     padding: 5px 12px;
-    background-color: gray;
+    background-color: black;
     color: white;
     font-weight: bold;
     font-size: 15px;
