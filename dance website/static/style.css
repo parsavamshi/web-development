@@ -10,7 +10,7 @@
 
 #navbar{
     background-color:#d43b3b;
-    padding: 13px 4px;
+    padding: 18px 14px;
     /* font-family: 'Roboto Mono', monospace; */
     font-family: 'Yeon Sung', cursive;
 
@@ -26,7 +26,7 @@ list-style: none;
 }
 #navbar li a {
     color: white;
-    font-size: 20px;
+    font-size: 28px;
     text-decoration: none;
     padding: 13px 20px;
     /* font-weight: bold; */
@@ -37,9 +37,9 @@ list-style: none;
 }
 #introSection{
     font-family: 'ZCOOL QingKe HuangYou', sans-serif;
-    font-size: 35px;
+    font-size: 60px;
     background:center / cover no-repeat url("../static/bg.jpg") ;
-    height: 300px;
+    height: 425px;
     color: white;
     display: flex;
     flex-direction: column;
@@ -49,7 +49,37 @@ list-style: none;
     padding-bottom:40px ;
 }
 #introSection div.small{
-    font-size: 27px;
+    font-size: 52px;
+    padding: 5px;
+}
+#missionSection{
+    height: 326px;
+    width: 67%;
+    margin: auto;
+    /* display: block; */
+    
+
+}
+#missionSection h2{
+    text-align: center;
+    font-size: 36px;
+    padding-top: 12px;
+    font-family: 'Yeon Sung', cursive;
+
+}
+.card{
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 26%;
+    margin: 23px 33px;
+    height: 200px;
+
+}
+.card h3{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin:12px ;
 }
 #sponsorsSection{
     height: 300px;
@@ -58,6 +88,7 @@ list-style: none;
 }
 #sponsorsSection h2{
     text-align: center;
+    font-size: 36px;
     padding-top: 12px;
     font-family: 'Yeon Sung', cursive;
 
